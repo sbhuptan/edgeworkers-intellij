@@ -293,6 +293,11 @@ public class ListEdgeWorkersAction extends AnAction {
         }
     }
 
+    @Override
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
+    }
+
     public SimpleToolWindowPanel getPanel() {
         return panel;
     }
